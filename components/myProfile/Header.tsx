@@ -3,6 +3,7 @@ import { Typography } from "../Typography";
 import { Box, Avatar } from "../Grid";
 import { makeStyles } from "@mui/styles";
 import { Navbar, Container, Nav } from "react-bootstrap";
+
 const useStyles = makeStyles({
   avatar: {
     cursor: "pointer",
@@ -56,6 +57,7 @@ const Header: FunctionComponent<HeaderProp> = ({
       onClick: toolsScroll,
     },
   ];
+  const assetPrefix = "/https://wipapuntec.github.io/Introduce-Myself";
   return (
     <Navbar expand="lg" bg="light">
       <Container>
@@ -63,7 +65,7 @@ const Header: FunctionComponent<HeaderProp> = ({
           <Box display="flex" className={classes.avatar}>
             <Avatar
               alt="Na"
-              src="/images/profile_na.jpg"
+              src={assetPrefix + "/images/profile_na.jpg"}
               onClick={profileClick}
             />
             <Typography

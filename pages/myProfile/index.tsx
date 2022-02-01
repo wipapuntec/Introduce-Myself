@@ -75,12 +75,10 @@ const MyProfileContainer: FunctionComponent = () => {
         />
       </Box>
       {ProfileLayout?.map((item, index) => (
-        <>
+        <Box key={index}>
           {index !== 0 && <Box className="lineColor" />}
-          <Box ref={item.ref} key={index}>
-            {item.display}
-          </Box>
-        </>
+          <Box ref={item.ref}>{item.display}</Box>
+        </Box>
       ))}
     </Box>
   );
