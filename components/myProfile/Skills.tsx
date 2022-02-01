@@ -22,7 +22,7 @@ const Skills: FunctionComponent = () => {
       images: "/images/css.png",
     },
   ];
-  const assetPrefix = "https://wipapuntec.github.io/Introduce-Myself";
+  const assetPrefix = "/https://wipapuntec.github.io/Introduce-Myself";
 
   return (
     <CardLayout title="Skills" bg={`url("/images/bg4.jpg")`}>
@@ -31,7 +31,7 @@ const Skills: FunctionComponent = () => {
           <Grid item md={3} key={index}>
             <img
               alt="skills"
-              src={`${assetPrefix}${item.images}`}
+              src={assetPrefix + item.images}
               width={100}
               height={100}
             />

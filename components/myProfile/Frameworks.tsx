@@ -38,14 +38,14 @@ const Frameworks: FunctionComponent = () => {
       images: "/images/bootstrap.png",
     },
   ];
-  const assetPrefix = "https://wipapuntec.github.io/Introduce-Myself";
+  const assetPrefix = "/https://wipapuntec.github.io/Introduce-Myself";
   return (
     <CardLayout title="Frameworks" bg={`url("/images/bg6.jpg")`}>
       <Grid container spacing={2} textAlign="center" my={1}>
         {framework?.map((item, index) => (
           <Grid item md={3} key={index}>
             <img
-              src={`${assetPrefix}${item.images}`}
+              src={assetPrefix + item.images}
               alt="framework"
               width={item.width ?? 100}
               height={100}
@@ -64,7 +64,7 @@ const Frameworks: FunctionComponent = () => {
         {ui?.map((item, index) => (
           <Grid item md={3} key={index}>
             <img
-              src={`${assetPrefix}${item.images}`}
+              src={assetPrefix + item.images}
               alt="ui-framework"
               width={100}
               height={100}

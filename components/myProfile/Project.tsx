@@ -43,7 +43,7 @@ const Project: FunctionComponent = () => {
       description: "Visual Studio Code, Github, Adobe XD, Animaker",
     },
   ];
-  const assetPrefix = "https://wipapuntec.github.io/Introduce-Myself";
+  const assetPrefix = "/https://wipapuntec.github.io/Introduce-Myself";
   return (
     <Grid container px={5} py={9} className={classes.content}>
       <Grid item xs={12} md={7}>
@@ -78,7 +78,7 @@ const Project: FunctionComponent = () => {
                     - {item?.title} :{" "}
                     {item?.image && (
                       <img
-                        src={`${assetPrefix}${item.image}`}
+                        src={assetPrefix + item.image}
                         width={30}
                         height={30}
                         alt="info"
@@ -103,7 +103,7 @@ const Project: FunctionComponent = () => {
               <Box alignSelf="center" display={{ xs: "none", md: "block" }}>
                 <img
                   alt="point"
-                  src={`${assetPrefix}/icons/point.gif`}
+                  src={assetPrefix + "/icons/point.gif"}
                   width={50}
                   height={50}
                 />

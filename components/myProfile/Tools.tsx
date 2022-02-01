@@ -66,7 +66,7 @@ const Tools: FunctionComponent = () => {
       images: "/images/bi.png",
     },
   ];
-  const assetPrefix = "https://wipapuntec.github.io/Introduce-Myself";
+  const assetPrefix = "/https://wipapuntec.github.io/Introduce-Myself";
 
   return (
     <CardLayout title="Tools" bg={`url("/images/bg7.jpg")`}>
@@ -75,7 +75,7 @@ const Tools: FunctionComponent = () => {
           <Grid item md={3} my={1} key={index}>
             <img
               alt="tools"
-              src={`${assetPrefix}${item.images}`}
+              src={assetPrefix + item.images}
               width={100}
               height={100}
             />
