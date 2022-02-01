@@ -22,19 +22,12 @@ const Skills: FunctionComponent = () => {
       images: "/images/css.png",
     },
   ];
-  const assetPrefix = "/https://wipapuntec.github.io/Introduce-Myself";
-
   return (
     <CardLayout title="Skills" bg={`url("/images/bg4.jpg")`}>
       <Grid container spacing={2} textAlign="center" my={1}>
         {skills?.map((item, index) => (
           <Grid item md={3} key={index}>
-            <img
-              alt="skills"
-              src={assetPrefix + item.images}
-              width={100}
-              height={100}
-            />
+            <img alt="skills" src={item.images} width={100} height={100} />
             <Typography variant="h5" mt={1}>
               {item.name}
             </Typography>

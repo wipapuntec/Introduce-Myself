@@ -52,13 +52,12 @@ const AboutMe: FunctionComponent = () => {
         "Bachelor of Science in Information Technology (GPAX : 3.15)",
     },
   ];
-  const assetPrefix = "/https://wipapuntec.github.io/Introduce-Myself";
   return (
     <Grid container px={5} py={2} className={classes.content}>
       <Grid item md={4} display={{ xs: "none", md: "block" }}>
         <Box px={3} display="flex" height="100%" justifyContent="center">
           <img
-            src={assetPrefix + "/images/profile_na2.jpg"}
+            src="/images/profile_na2.jpg"
             alt="profile"
             className={classes.image}
             width={280}
@@ -87,7 +86,7 @@ const AboutMe: FunctionComponent = () => {
             {infoLayout?.map((item, index) => (
               <>
                 {item?.sub_description ? (
-                  <Box key={index}>
+                  <>
                     <Box mt={2}>
                       <Box>
                         <Typography variant="body1">
@@ -100,7 +99,7 @@ const AboutMe: FunctionComponent = () => {
                         {item?.sub_description}
                       </Typography>
                     </Box>
-                  </Box>
+                  </>
                 ) : (
                   <Box my={2} key={index}>
                     <Box mb={1}>
