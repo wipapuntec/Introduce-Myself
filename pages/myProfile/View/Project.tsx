@@ -9,6 +9,7 @@ import { Typography, ProjectIcon } from "../../../components/Typography";
 import { YoutubeLayout } from "../../../components/layout";
 import { makeStyles } from "@mui/styles";
 import { FunctionComponent } from "react";
+import Image from "next/image";
 
 const useStyles = makeStyles({
   content: {
@@ -82,7 +83,7 @@ const Project: FunctionComponent = () => {
                   <Typography variant="caption">
                     - {item?.title} :{" "}
                     {item?.image && (
-                      <img
+                      <Image
                         src={item.image}
                         width={30}
                         height={30}
@@ -104,7 +105,7 @@ const Project: FunctionComponent = () => {
                 </button>
               </a>
               <Box alignSelf="center" display={{ xs: "none", md: "block" }}>
-                <img src="/icons/point.gif" width={50} height={50} />
+                <Image src="/icons/point.gif" width={50} height={50} />
               </Box>
             </Box>
           </CardContent>

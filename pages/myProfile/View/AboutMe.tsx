@@ -15,6 +15,7 @@ import {
 } from "../../../components/Typography";
 import { makeStyles } from "@mui/styles";
 import { FunctionComponent } from "react";
+import Image from "next/image";
 
 const useStyles = makeStyles({
   content: {
@@ -53,7 +54,7 @@ const AboutMe: FunctionComponent = () => {
     <Grid container px={5} py={2} className={classes.content}>
       <Grid item md={4} display={{ xs: "none", md: "block" }}>
         <Box px={3} textAlign="center">
-          <img src="images/profile_na2.jpg" className="myProfile" />
+          <Image src="images/profile_na2.jpg" className="myProfile" />
         </Box>
       </Grid>
       <Grid item xs={12} md={8}>
