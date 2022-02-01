@@ -52,6 +52,12 @@ const AboutMe: FunctionComponent = () => {
       description:
         "254/259 Bangkok horizon P48. Phet Kasem Road, Bang Wa, Phasi Charoen, Bangkok 10160",
     },
+    {
+      icon: <EducationIcon className={classes.icon} />,
+      description: "King Mongkut's University of Technology Thonburi",
+      sub_description:
+        "Bachelor of Science in Information Technology (GPAX : 3.15)",
+    },
   ];
   return (
     <Grid container px={5} py={2} className={classes.content}>
@@ -85,28 +91,33 @@ const AboutMe: FunctionComponent = () => {
             <Divider />
 
             {infoLayout?.map((item, index) => (
-              <Box my={2} key={index}>
-                <Box mb={1}>
-                  <Typography variant="body1">
-                    {item?.icon}: {item?.description}
-                  </Typography>
-                </Box>
-              </Box>
+              <>
+                {item?.sub_description ? (
+                  <>
+                    <Box mt={2}>
+                      <Box>
+                        <Typography variant="body1">
+                          {item?.icon}: {item?.description}
+                        </Typography>
+                      </Box>
+                    </Box>
+                    <Box pl="45px">
+                      <Typography variant="caption">
+                        {item?.sub_description}
+                      </Typography>
+                    </Box>
+                  </>
+                ) : (
+                  <Box my={2} key={index}>
+                    <Box mb={1}>
+                      <Typography variant="body1">
+                        {item?.icon}: {item?.description}
+                      </Typography>
+                    </Box>
+                  </Box>
+                )}
+              </>
             ))}
-
-            <Box mt={2}>
-              <Box>
-                <Typography variant="body1">
-                  <EducationIcon className={classes.icon} />: King Mongkut's
-                  University of Technology Thonburi
-                </Typography>
-              </Box>
-            </Box>
-            <Box pl="45px">
-              <Typography variant="caption">
-                Bachelor of Science in Information Technology (GPAX : 3.15)
-              </Typography>
-            </Box>
           </CardContent>
         </Card>
       </Grid>

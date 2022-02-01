@@ -100,6 +100,7 @@ const Project: FunctionComponent = () => {
               <a
                 target="_blank"
                 href="https://seniorproject.sit.kmutt.ac.th/showproject/IT59-BU27"
+                rel="noopener noreferrer"
               >
                 <button className="buttonLink">
                   CLICK ME <ProjectIcon className={classes.icon} />
