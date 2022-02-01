@@ -25,9 +25,6 @@ const useStyles = makeStyles({
     marginRight: 7,
     fontSize: 30,
   },
-  paragraph: {
-    textIndent: "4%",
-  },
 });
 
 const AboutMe: FunctionComponent = () => {

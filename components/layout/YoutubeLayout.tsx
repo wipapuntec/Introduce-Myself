@@ -1,10 +1,10 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
-interface YoutubeProp {
+interface IYoutubeProp {
   embedId: string;
 }
 
-const YoutubeLayout = ({ embedId }: YoutubeProp) => {
+const YoutubeLayout: FunctionComponent<IYoutubeProp> = ({ embedId }) => {
   return (
     <iframe
       className="youtube"

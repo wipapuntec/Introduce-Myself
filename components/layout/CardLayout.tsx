@@ -1,3 +1,4 @@
+import React, { FunctionComponent } from "react";
 import { Card, CardContent, Grid, Divider } from "../Grid";
 import { Typography } from "../Typography";
 import { makeStyles } from "@mui/styles";
@@ -15,11 +16,11 @@ const useStyles = makeStyles({
   }),
 });
 
-const CardLayout = ({ title, children, bg }: CardProp) => {
+const CardLayout: FunctionComponent<CardProp> = ({ title, children, bg }) => {
   const classes = useStyles({ bg });
   return (
     <Grid container px={5} py={9} className={classes.content}>
-      <Grid item md={12}>
+      <Grid item sm={12} md={12}>
         <Card
           sx={{
             "& .MuiTimelineItem-missingOppositeContent:before": {

@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import { FunctionComponent } from "react";
+
 import {
   Timeline,
   TimelineItem,
@@ -8,17 +10,9 @@ import {
   TimelineDot,
 } from "@mui/lab";
 import { CardLayout } from "../../../components/layout";
-import { Box, Grid } from "../../../components/Grid";
+import { Grid } from "../../../components/Grid";
 import { Typography } from "../../../components/Typography";
 import ImageZoomLayout from "../../../components/ImageZoom";
-import { makeStyles } from "@mui/styles";
-
-const useStyles = makeStyles({
-  imageGraph: {
-    width: "10% !important",
-    border: "10px solid red",
-  },
-});
 
 const INTERNSHIPS = [
   {
@@ -121,14 +115,14 @@ function OrderItem({ item, isLast }) {
   );
 }
 
-export default function Experience() {
+const Experience: FunctionComponent = () => {
   return (
     <CardLayout title="Experience" bg={`url("/images/bg5.jpg")`}>
       <Typography variant="h4" mt={2}>
         Internships : Business Intelligence
       </Typography>
       <Timeline>
-        {INTERNSHIPS.map((item, index) => (
+        {INTERNSHIPS?.map((item, index) => (
           <OrderItem
             key={item.title}
             item={item}
@@ -140,7 +134,7 @@ export default function Experience() {
         Frontend Developer
       </Typography>
       <Timeline>
-        {TIMELINES.map((item, index) => (
+        {TIMELINES?.map((item, index) => (
           <OrderItem
             key={item.title}
             item={item}
@@ -150,4 +144,5 @@ export default function Experience() {
       </Timeline>
     </CardLayout>
   );
-}
+};
+export default Experience;
