@@ -3,12 +3,12 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url(/fonts/Prompt-Light.ttf);
+  src: url(/Introduce-Myself/fonts/Prompt-Light.ttf);
 }
 
 @font-face {
   font-family: Prompt;
   font-style: bold;
   font-display: swap;
-  src: url(/fonts/Prompt-Medium.ttf);
+  src: url(/Introduce-Myself/fonts/Prompt-Medium.ttf);
 }
