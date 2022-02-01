@@ -2,6 +2,7 @@ import { Grid } from "../Grid";
 import { Typography } from "../Typography";
 import { FunctionComponent } from "react";
 import { CardLayout } from "../layout";
+import { assetPrefix } from "../../next.config";
 
 const Tools: FunctionComponent = () => {
   const skills = [
@@ -71,7 +72,12 @@ const Tools: FunctionComponent = () => {
       <Grid container spacing={2} textAlign="center" my={2}>
         {skills?.map((item, index) => (
           <Grid item md={3} my={1} key={index}>
-            <img alt="tools" src={item.images} width={100} height={100} />
+            <img
+              alt="tools"
+              src={`${assetPrefix}${item.images}`}
+              width={100}
+              height={100}
+            />
             <Typography variant="h5" mt={1}>
               {item.name}
             </Typography>

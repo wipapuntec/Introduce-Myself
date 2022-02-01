@@ -16,7 +16,7 @@ a {
 
 .animationBg {
   animation: scroll 70s linear infinite;
-  background: url("/images/bgSky.jpg");
+  background: url("/Introduce-Myself/images/bgSky.jpg");
   color: #292929;
   height: 100vh;
   min-width: 360px;

@@ -3,6 +3,7 @@ import { Typography, ProjectIcon } from "../Typography";
 import { YoutubeLayout } from "../layout";
 import { makeStyles } from "@mui/styles";
 import { FunctionComponent } from "react";
+import { assetPrefix } from "../../next.config";
 
 const useStyles = makeStyles({
   content: {
@@ -77,7 +78,7 @@ const Project: FunctionComponent = () => {
                     - {item?.title} :{" "}
                     {item?.image && (
                       <img
-                        src={item.image}
+                        src={`${assetPrefix}${item.image}`}
                         width={30}
                         height={30}
                         alt="info"
@@ -102,7 +103,7 @@ const Project: FunctionComponent = () => {
               <Box alignSelf="center" display={{ xs: "none", md: "block" }}>
                 <img
                   alt="point"
-                  src="/icons/point.gif"
+                  src={`${assetPrefix}/icons/point.gif`}
                   width={50}
                   height={50}
                 />

@@ -9,6 +9,7 @@ import {
 } from "../Typography";
 import { makeStyles } from "@mui/styles";
 import { FunctionComponent } from "react";
+import { assetPrefix } from "../../next.config";
 
 const useStyles = makeStyles({
   content: {
@@ -57,7 +58,7 @@ const AboutMe: FunctionComponent = () => {
       <Grid item md={4} display={{ xs: "none", md: "block" }}>
         <Box px={3} display="flex" height="100%" justifyContent="center">
           <img
-            src="/images/profile_na2.jpg"
+            src={`${assetPrefix}/images/profile_na2.jpg`}
             alt="profile"
             className={classes.image}
             width={280}

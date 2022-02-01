@@ -2,6 +2,7 @@ import { Grid } from "../Grid";
 import { Typography } from "../Typography";
 import { FunctionComponent } from "react";
 import { CardLayout } from "../layout";
+import { assetPrefix } from "../../next.config";
 
 const Frameworks: FunctionComponent = () => {
   const framework = [
@@ -44,7 +45,7 @@ const Frameworks: FunctionComponent = () => {
         {framework?.map((item, index) => (
           <Grid item md={3} key={index}>
             <img
-              src={item.images}
+              src={`${assetPrefix}${item.images}`}
               alt="framework"
               width={item.width ?? 100}
               height={100}
@@ -63,7 +64,7 @@ const Frameworks: FunctionComponent = () => {
         {ui?.map((item, index) => (
           <Grid item md={3} key={index}>
             <img
-              src={item.images}
+              src={`${assetPrefix}${item.images}`}
               alt="ui-framework"
               width={100}
               height={100}
