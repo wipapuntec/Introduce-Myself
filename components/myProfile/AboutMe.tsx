@@ -52,13 +52,13 @@ const AboutMe: FunctionComponent = () => {
         "Bachelor of Science in Information Technology (GPAX : 3.15)",
     },
   ];
-  const assetPrefix = "/https://wipapuntec.github.io/Introduce-Myself";
+  const assetPrefix = "https://wipapuntec.github.io/Introduce-Myself";
   return (
     <Grid container px={5} py={2} className={classes.content}>
       <Grid item md={4} display={{ xs: "none", md: "block" }}>
         <Box px={3} display="flex" height="100%" justifyContent="center">
           <img
-            src={assetPrefix + "/images/profile_na2.jpg"}
+            src={`${assetPrefix}/images/profile_na2.jpg`}
             alt="profile"
             className={classes.image}
             width={280}
