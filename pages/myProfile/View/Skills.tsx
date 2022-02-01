@@ -28,7 +28,7 @@ const Skills: FunctionComponent = () => {
       <Grid container spacing={2} textAlign="center" my={1}>
         {skills?.map((item, index) => (
           <Grid item md={3} key={index}>
-            <Image src={item.images} width={100} height={100} />
+            <Image alt="skills" src={item.images} width={100} height={100} />
             <Typography variant="h5" mt={1}>
               {item.name}
             </Typography>

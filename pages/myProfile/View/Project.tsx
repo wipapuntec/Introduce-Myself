@@ -87,6 +87,7 @@ const Project: FunctionComponent = () => {
                         src={item.image}
                         width={30}
                         height={30}
+                        alt="info"
                         className={classes.image}
                       />
                     )}
@@ -105,7 +106,12 @@ const Project: FunctionComponent = () => {
                 </button>
               </a>
               <Box alignSelf="center" display={{ xs: "none", md: "block" }}>
-                <Image src="/icons/point.gif" width={50} height={50} />
+                <Image
+                  alt="point"
+                  src="/icons/point.gif"
+                  width={50}
+                  height={50}
+                />
               </Box>
             </Box>
           </CardContent>

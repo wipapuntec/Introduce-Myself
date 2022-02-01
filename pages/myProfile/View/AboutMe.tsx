@@ -26,6 +26,9 @@ const useStyles = makeStyles({
     marginRight: 7,
     fontSize: 30,
   },
+  image: {
+    borderRadius: 5,
+  },
 });
 
 const AboutMe: FunctionComponent = () => {
@@ -53,8 +56,14 @@ const AboutMe: FunctionComponent = () => {
   return (
     <Grid container px={5} py={2} className={classes.content}>
       <Grid item md={4} display={{ xs: "none", md: "block" }}>
-        <Box px={3} textAlign="center">
-          <Image src="images/profile_na2.jpg" className="myProfile" />
+        <Box px={3} display="flex" height="100%" justifyContent="center">
+          <Image
+            src="/images/profile_na2.jpg"
+            alt="profile"
+            className={classes.image}
+            width={280}
+            height="100%"
+          />
         </Box>
       </Grid>
       <Grid item xs={12} md={8}>

@@ -44,7 +44,12 @@ const Frameworks: FunctionComponent = () => {
       <Grid container spacing={2} textAlign="center" my={1}>
         {framework?.map((item, index) => (
           <Grid item md={3} key={index}>
-            <Image src={item.images} width={item.width ?? 100} height={100} />
+            <Image
+              src={item.images}
+              alt="framework"
+              width={item.width ?? 100}
+              height={100}
+            />
             <Typography variant="h5" mt={1}>
               {item.name}
             </Typography>
@@ -58,7 +63,12 @@ const Frameworks: FunctionComponent = () => {
       <Grid container spacing={2} textAlign="center" my={1}>
         {ui?.map((item, index) => (
           <Grid item md={3} key={index}>
-            <Image src={item.images} width={100} height={100} />
+            <Image
+              src={item.images}
+              alt="ui-framework"
+              width={100}
+              height={100}
+            />
             <Typography variant="h5" mt={1}>
               {item.name}
             </Typography>
