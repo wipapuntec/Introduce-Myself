@@ -77,7 +77,7 @@ const Project: FunctionComponent = () => {
                   <Typography variant="caption">
                     - {item?.title} :{" "}
                     {item?.image && (
-                      <Image
+                      <img
                         src={item.image}
                         width={30}
                         height={30}
@@ -101,7 +101,7 @@ const Project: FunctionComponent = () => {
                 </button>
               </a>
               <Box alignSelf="center" display={{ xs: "none", md: "block" }}>
-                <Image
+                <img
                   alt="point"
                   src="/icons/point.gif"
                   width={50}

@@ -57,7 +57,7 @@ const AboutMe: FunctionComponent = () => {
     <Grid container px={5} py={2} className={classes.content}>
       <Grid item md={4} display={{ xs: "none", md: "block" }}>
         <Box px={3} display="flex" height="100%" justifyContent="center">
-          <Image
+          <img
             src="/images/profile_na2.jpg"
             alt="profile"
             className={classes.image}

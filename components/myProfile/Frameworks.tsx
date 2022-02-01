@@ -44,7 +44,7 @@ const Frameworks: FunctionComponent = () => {
       <Grid container spacing={2} textAlign="center" my={1}>
         {framework?.map((item, index) => (
           <Grid item md={3} key={index}>
-            <Image
+            <img
               src={item.images}
               alt="framework"
               width={item.width ?? 100}
@@ -63,7 +63,7 @@ const Frameworks: FunctionComponent = () => {
       <Grid container spacing={2} textAlign="center" my={1}>
         {ui?.map((item, index) => (
           <Grid item md={3} key={index}>
-            <Image
+            <img
               src={item.images}
               alt="ui-framework"
               width={100}
