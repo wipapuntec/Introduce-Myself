@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from "react";
-import { MyProfile } from "./myProfile";
+import MyProfile from "./myProfile";
 
 const index: FunctionComponent = () => {
   return (

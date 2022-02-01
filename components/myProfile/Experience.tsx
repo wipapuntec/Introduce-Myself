@@ -9,10 +9,10 @@ import {
   TimelineSeparator,
   TimelineDot,
 } from "@mui/lab";
-import { CardLayout } from "../../../components/layout";
-import { Grid } from "../../../components/Grid";
-import { Typography } from "../../../components/Typography";
-import ImageZoomLayout from "../../../components/ImageZoom";
+import { CardLayout } from "../layout";
+import { Grid } from "../Grid";
+import { Typography } from "../Typography";
+import ImageZoomLayout from "../ImageZoom";
 
 const INTERNSHIPS = [
   {

@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from "react";
 import { makeStyles } from "@mui/styles";
-import { Typography } from "../../../components/Typography";
-import { Grid, Box } from "../../../components/Grid";
+import { Typography } from "../Typography";
+import { Grid, Box } from "../Grid";
 
 const useStyles = makeStyles({
   bgContent: {

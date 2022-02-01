@@ -1,8 +1,7 @@
-import { Grid } from "../../../components/Grid";
-import { Typography } from "../../../components/Typography";
-import { makeStyles } from "@mui/styles";
+import { Grid } from "../Grid";
+import { Typography } from "../Typography";
 import { FunctionComponent } from "react";
-import { CardLayout } from "../../../components/layout";
+import { CardLayout } from "../layout";
 import Image from "next/image";
 
 const Tools: FunctionComponent = () => {

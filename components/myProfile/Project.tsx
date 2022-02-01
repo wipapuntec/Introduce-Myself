@@ -1,12 +1,6 @@
-import {
-  Box,
-  Card,
-  CardContent,
-  Grid,
-  Divider,
-} from "../../../components/Grid";
-import { Typography, ProjectIcon } from "../../../components/Typography";
-import { YoutubeLayout } from "../../../components/layout";
+import { Box, Card, CardContent, Grid, Divider } from "../Grid";
+import { Typography, ProjectIcon } from "../Typography";
+import { YoutubeLayout } from "../layout";
 import { makeStyles } from "@mui/styles";
 import { FunctionComponent } from "react";
 import Image from "next/image";

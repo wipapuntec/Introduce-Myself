@@ -1,10 +1,6 @@
 import React, { FunctionComponent } from "react";
-import AppBar from "@mui/material/AppBar";
-import Toolbar from "@mui/material/Toolbar";
-import LanguageIcon from "@mui/icons-material/Language";
-import { Button } from "../../../components/Button";
-import { Typography } from "../../../components/Typography";
-import { Box, Grid, Avatar } from "../../../components/Grid";
+import { Typography } from "../Typography";
+import { Box, Avatar } from "../Grid";
 import { makeStyles } from "@mui/styles";
 import { Navbar, Container, Nav } from "react-bootstrap";
 const useStyles = makeStyles({

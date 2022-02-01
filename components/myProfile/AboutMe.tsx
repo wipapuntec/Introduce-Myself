@@ -1,10 +1,4 @@
-import {
-  Box,
-  Card,
-  CardContent,
-  Grid,
-  Divider,
-} from "../../../components/Grid";
+import { Box, Card, CardContent, Grid, Divider } from "../Grid";
 import {
   Typography,
   EducationIcon,
@@ -12,7 +6,7 @@ import {
   BirthDayIcon,
   PhoneIcon,
   LocationIcon,
-} from "../../../components/Typography";
+} from "../Typography";
 import { makeStyles } from "@mui/styles";
 import { FunctionComponent } from "react";
 import Image from "next/image";
