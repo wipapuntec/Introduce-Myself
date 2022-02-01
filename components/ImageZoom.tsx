@@ -1,5 +1,6 @@
 import { FunctionComponent } from "react";
 import ImageZoom from "react-medium-image-zoom";
+import { assetPrefix } from "../next.config";
 
 interface IImagesProps {
   image?: string;
@@ -18,11 +19,11 @@ const ImageZoomLayout: FunctionComponent<IImagesProps> = ({
     <ImageZoom
       image={{
         className: className,
-        src: image ?? "",
+        src: image ? `${assetPrefix}${image}` : "",
         alt: alt ?? "images",
       }}
       zoomImage={{
-        src: zoomImage ?? "",
+        src: zoomImage ? `${assetPrefix}${zoomImage}` : "",
         alt: alt ?? "images",
       }}
     />

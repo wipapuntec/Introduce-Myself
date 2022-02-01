@@ -3,6 +3,8 @@ import { Typography } from "../Typography";
 import { Box, Avatar } from "../Grid";
 import { makeStyles } from "@mui/styles";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { assetPrefix } from "../../next.config";
+
 const useStyles = makeStyles({
   avatar: {
     cursor: "pointer",
@@ -63,7 +65,7 @@ const Header: FunctionComponent<HeaderProp> = ({
           <Box display="flex" className={classes.avatar}>
             <Avatar
               alt="Na"
-              src="/images/profile_na.jpg"
+              src={`${assetPrefix}/images/profile_na.jpg`}
               onClick={profileClick}
             />
             <Typography

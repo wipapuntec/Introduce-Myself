@@ -8,7 +8,7 @@ const Skills: FunctionComponent = () => {
   const skills = [
     {
       name: "JavaScript",
-      images: "/images/js.png",
+      images: "/images/javascript.png",
     },
     {
       name: "TypeScript",
