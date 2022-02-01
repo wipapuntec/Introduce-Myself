@@ -12,6 +12,12 @@ import {
 import { Box } from "../../components/Grid";
 
 const MyProfileContainer: FunctionComponent = () => {
+  const [firstOpen, setFirstOpen] = useState(true);
+
+  setTimeout(() => {
+    setFirstOpen(false);
+  }, 3000);
+
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
   const scrollToTop = () => {
@@ -64,24 +70,30 @@ const MyProfileContainer: FunctionComponent = () => {
   ];
   return (
     <Box>
-      <Box position="sticky" top={0} zIndex={1}>
-        <Header
-          profileClick={scrollToTop}
-          projectScroll={projectScroll}
-          experienceScroll={experienceScroll}
-          skillsScroll={skillsScroll}
-          frameworksScroll={frameworksScroll}
-          toolsScroll={toolsScroll}
-        />
-      </Box>
-      {ProfileLayout?.map((item, index) => (
-        <>
-          {index !== 0 && <Box className="lineColor" />}
-          <Box ref={item.ref} key={index}>
-            {item.display}
+      {firstOpen ? (
+        <Loading />
+      ) : (
+        <Box>
+          <Box position="sticky" top={0} zIndex={1}>
+            <Header
+              profileClick={scrollToTop}
+              projectScroll={projectScroll}
+              experienceScroll={experienceScroll}
+              skillsScroll={skillsScroll}
+              frameworksScroll={frameworksScroll}
+              toolsScroll={toolsScroll}
+            />
           </Box>
-        </>
-      ))}
+          {ProfileLayout?.map((item, index) => (
+            <>
+              {index !== 0 && <Box className="lineColor" />}
+              <Box ref={item.ref} key={index}>
+                {item.display}
+              </Box>
+            </>
+          ))}
+        </Box>
+      )}
     </Box>
   );
 };
