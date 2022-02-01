@@ -3,7 +3,6 @@ import { Typography, ProjectIcon } from "../Typography";
 import { YoutubeLayout } from "../layout";
 import { makeStyles } from "@mui/styles";
 import { FunctionComponent } from "react";
-import Image from "next/image";
 
 const useStyles = makeStyles({
   content: {

@@ -9,7 +9,6 @@ import {
 } from "../Typography";
 import { makeStyles } from "@mui/styles";
 import { FunctionComponent } from "react";
-import Image from "next/image";
 
 const useStyles = makeStyles({
   content: {

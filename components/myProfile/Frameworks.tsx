@@ -2,7 +2,6 @@ import { Grid } from "../Grid";
 import { Typography } from "../Typography";
 import { FunctionComponent } from "react";
 import { CardLayout } from "../layout";
-import Image from "next/image";
 
 const Frameworks: FunctionComponent = () => {
   const framework = [
