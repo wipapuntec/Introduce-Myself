@@ -40,7 +40,7 @@ const Frameworks: FunctionComponent = () => {
     },
   ];
   return (
-    <CardLayout title="Frameworks" bg={`url("/images/bg6.jpg")`}>
+    <CardLayout title="Frameworks" bg={`url("${assetPrefix}/images/bg6.jpg")`}>
       <Grid container spacing={2} textAlign="center" my={1}>
         {framework?.map((item, index) => (
           <Grid item md={3} key={index}>

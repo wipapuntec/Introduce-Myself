@@ -13,6 +13,7 @@ import { CardLayout } from "../layout";
 import { Grid } from "../Grid";
 import { Typography } from "../Typography";
 import ImageZoomLayout from "../ImageZoom";
+import { assetPrefix } from "../../next.config";
 
 const INTERNSHIPS = [
   {
@@ -117,7 +118,7 @@ function OrderItem({ item, isLast }) {
 
 const Experience: FunctionComponent = () => {
   return (
-    <CardLayout title="Experience" bg={`url("/images/bg5.jpg")`}>
+    <CardLayout title="Experience" bg={`url("${assetPrefix}/images/bg5.jpg")`}>
       <Typography variant="h4" mt={2}>
         Internships : Business Intelligence
       </Typography>

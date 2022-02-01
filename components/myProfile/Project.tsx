@@ -7,7 +7,7 @@ import { assetPrefix } from "../../next.config";
 
 const useStyles = makeStyles({
   content: {
-    background: `url("/images/bg4.jpg")`,
+    background: `url("${assetPrefix}/images/bg4.jpg")`,
     backgroundSize: "cover",
   },
   icon: {

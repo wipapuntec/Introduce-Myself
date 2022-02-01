@@ -2,6 +2,7 @@ import React, { FunctionComponent } from "react";
 import { Card, CardContent, Grid, Divider } from "../Grid";
 import { Typography } from "../Typography";
 import { makeStyles } from "@mui/styles";
+import { assetPrefix } from "../../next.config";
 
 interface CardProp {
   title?: string;
@@ -11,7 +12,7 @@ interface CardProp {
 
 const useStyles = makeStyles({
   content: (props: any) => ({
-    background: props.bg ?? `url("/images/bg6.jpg")`,
+    background: props.bg ?? `url("${assetPrefix}/images/bg6.jpg")`,
     backgroundSize: "cover",
   }),
 });

@@ -24,7 +24,7 @@ const Skills: FunctionComponent = () => {
     },
   ];
   return (
-    <CardLayout title="Skills" bg={`url("/images/bg4.jpg")`}>
+    <CardLayout title="Skills" bg={`url("${assetPrefix}/images/bg4.jpg")`}>
       <Grid container spacing={2} textAlign="center" my={1}>
         {skills?.map((item, index) => (
           <Grid item md={3} key={index}>
