@@ -11,7 +11,7 @@ const RootStyle = styled(Card)(({ theme, color }) => ({
   textAlign: "center",
   padding: theme.spacing(2, 0),
   color: theme.palette.primary.light,
-  backgroundColor: color ?? theme.palette.primary.lighter,
+  backgroundColor: color ?? theme.palette.primary.light,
   cursor: "pointer",
 }));
 
