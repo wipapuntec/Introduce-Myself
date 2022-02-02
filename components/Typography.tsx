@@ -13,6 +13,7 @@ import {
   FolderSpecial,
   Mail,
   LocationOn,
+  Menu
 } from "@mui/icons-material";
 
 export const Typography = typography;
@@ -30,3 +31,4 @@ export const UserIcon = Face;
 export const ProjectIcon = FolderSpecial;
 export const MailIcon = Mail;
 export const LocationIcon = LocationOn;
+export const MenuIcon = Menu;

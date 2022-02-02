@@ -43,7 +43,7 @@ const Frameworks: FunctionComponent = () => {
     <CardLayout title="Frameworks" bg={`url("${assetPrefix}/images/bg6.jpg")`}>
       <Grid container spacing={2} textAlign="center" my={1}>
         {framework?.map((item, index) => (
-          <Grid item md={3} key={index}>
+          <Grid item sm={12} md={3} key={index}>
             <img
               src={`${assetPrefix}${item.images}`}
               alt="framework"
@@ -60,9 +60,9 @@ const Frameworks: FunctionComponent = () => {
         UI Framework :
       </Typography>
 
-      <Grid container spacing={2} textAlign="center" my={1}>
+      <Grid container spacing={2} textAlign="center" my={1} >
         {ui?.map((item, index) => (
-          <Grid item md={3} key={index}>
+          <Grid item sm={4} md={3} key={index} >
             <img
               src={`${assetPrefix}${item.images}`}
               alt="ui-framework"
